@@ -3845,3 +3845,20 @@ Entries:
         sprites.
   id: 412
   time: '2026-05-13T09:16:55.0000000+00:00'
+- author: Kronyxxx
+  changes:
+    - type: Add
+      message: >-
+        Added Non-Con Aggressor and Non-Con Victim consent toggles. The Non-Con
+        HUD marker is now color- and shape-coded based on the target's role(s):
+        red/horns-up for aggressor, blue/horns-down for victim, purple/both for
+        either. Existing Non-Con users who don't pick a role keep the original
+        red marker.
+    - type: Add
+      message: >-
+        Added a "Use colorblind-friendly Non-Con marker colors" toggle in the
+        Consent menu. When enabled, the Non-Con role markers use a
+        colorblind-safe amber/teal-green/lavender palette instead of
+        red/blue/purple. Affects only the local viewer.
+  id: 413
+  time: '2026-05-13T09:18:30.0000000+00:00'
