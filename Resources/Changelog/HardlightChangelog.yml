@@ -3831,3 +3831,9 @@ Entries:
       message: The STC now correctly has access to traffic control consoles.
   id: 410
   time: '2026-05-13T06:55:08.0000000+00:00'
+- author: Illumos
+  changes:
+    - type: Add
+      message: Marriage Axe from Starlight
+  id: 411
+  time: '2026-05-13T06:58:04.0000000+00:00'
