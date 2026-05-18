@@ -370,6 +370,11 @@ public abstract partial class SharedGunSystem : EntitySystem
         if (toCoordinates == null)
             return;
 
+        // Freeze the requested aim point in map space so burst/auto fire does not pivot with the shooter
+        // after recoil or other movement changes the gun's local transform.
+        toCoordinates = TransformSystem.ToCoordinates(TransformSystem.ToMapCoordinates(toCoordinates.Value));
+        gun.ShootCoordinates = toCoordinates;
+
         var curTime = Timing.CurTime;
 
         // check if anything wants to prevent shooting
@@ -521,8 +526,8 @@ public abstract partial class SharedGunSystem : EntitySystem
 
         // Shoot confirmed - sounds also played here in case it's invalid (e.g. cartridge already spent).
         Shoot(gunUid, gun, ev.Ammo, fromCoordinates, toCoordinates.Value, out var userImpulse, user, throwItems: attemptEv.ThrowItems);
-        var shotEv = new GunShotEvent(user, ev.Ammo, toCoordinates.Value); // Mono - pass coordinates
-        RaiseLocalEvent(gunUid, ref shotEv);
+        var shotEv = new GunShotEvent(user, gunUid, ev.Ammo, fromCoordinates, toCoordinates.Value); // Mono - pass coordinates
+        RaiseLocalEvent(gunUid, ref shotEv, broadcast: true);
 
         CauseImpulse(toCoordinates.Value, (gunUid, gun), ev.Ammo.Count);
 
@@ -841,8 +846,9 @@ public record struct AttemptShootEvent(EntityUid User, string? Message, bool Can
 ///     Raised directed on the gun after firing.
 /// </summary>
 /// <param name="User">The user that fired this gun.</param>
+/// <param name="Gun">The gun that fired.</param>
 [ByRefEvent]
-public record struct GunShotEvent(EntityUid User, List<(EntityUid? Uid, IShootable Shootable)> Ammo, EntityCoordinates ToCoordinates); // Mono - pass coordinates
+public record struct GunShotEvent(EntityUid User, EntityUid Gun, List<(EntityUid? Uid, IShootable Shootable)> Ammo, EntityCoordinates FromCoordinates, EntityCoordinates ToCoordinates); // Mono - pass coordinates
 
 public enum EffectLayers : byte
 {
