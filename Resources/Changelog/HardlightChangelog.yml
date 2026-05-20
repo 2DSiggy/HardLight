@@ -4118,3 +4118,9 @@ Entries:
       message: Removed colour limits across all species.
   id: 444
   time: '2026-05-20T08:35:02.0000000+00:00'
+- author: NotLivyathan
+  changes:
+    - type: Add
+      message: Select species now have the ability to speak in their native tongue.
+  id: 445
+  time: '2026-05-20T08:35:53.0000000+00:00'
