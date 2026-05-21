@@ -4160,3 +4160,9 @@ Entries:
       message: Ported the Jabber from Coyote.
   id: 449
   time: '2026-05-21T10:40:00.0000000+00:00'
+- author: Illumos
+  changes:
+    - type: Add
+      message: Synthetic trait now gives you EAL
+  id: 450
+  time: '2026-05-21T10:40:37.0000000+00:00'
