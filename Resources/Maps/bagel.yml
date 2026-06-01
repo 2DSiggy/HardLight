@@ -78055,6 +78055,7 @@ entities:
       channels:
       - Engineering
       - Common
+      - Faction
 - proto: ClothingHeadsetMedicalScience
   entities:
   - uid: 9574
@@ -78067,6 +78068,7 @@ entities:
       - Medical
       - Science
       - Common
+      - Faction
 - proto: ClothingHeadsetMining
   entities:
   - uid: 9575
@@ -78076,6 +78078,7 @@ entities:
       parent: 2
     - type: ActiveRadio
       channels:
+      - Faction
       - Supply
       - Common
   - uid: 9576
@@ -78085,6 +78088,7 @@ entities:
       parent: 2
     - type: ActiveRadio
       channels:
+      - Faction
       - Supply
       - Common
   - uid: 9577
@@ -78096,6 +78100,7 @@ entities:
       channels:
       - Supply
       - Common
+      - Faction
 - proto: ClothingMaskBlushingClown
   entities:
   - uid: 9578
