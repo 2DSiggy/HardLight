@@ -4576,3 +4576,11 @@ Entries:
       message: Discord should no longer get spammed when PRs are merged, my bad :3
   id: 485
   time: '2026-06-09T17:57:38.0000000+00:00'
+- author: DrekkCuga
+  changes:
+    - type: Fix
+      message: >-
+        Fixed some actions in the right-click menu on a player showing up with a
+        delay.
+  id: 486
+  time: '2026-06-09T17:59:12.0000000+00:00'
