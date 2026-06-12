@@ -4632,3 +4632,19 @@ Entries:
       message: AI Remote Devices and Shunt Control now requires AI Shunt Receiver
   id: 493
   time: '2026-06-12T22:12:36.0000000+00:00'
+- author: Vonte
+  changes:
+    - type: Fix
+      message: Paramedic windbreaker is now unzippable
+    - type: Fix
+      message: Ion storms now display the correct message to Synthetic trait characters
+    - type: Fix
+      message: >-
+        the security holoprojector barrier now has a blue pointlight to match
+        its new colors
+    - type: Fix
+      message: >-
+        the dynamoxine medpen from the sec vendor will no longer display a large
+        ERROR instead of a sprite inhand
+  id: 494
+  time: '2026-06-12T22:13:02.0000000+00:00'
