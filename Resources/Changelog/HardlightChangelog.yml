@@ -4912,3 +4912,11 @@ Entries:
       message: syndicate equipment no longer saves
   id: 527
   time: '2026-06-18T11:27:33.0000000+00:00'
+- author: IngvarJackal
+  changes:
+    - type: Fix
+      message: >-
+        Fixed saved ships losing their consoles and air vents/scrubbers when
+        loaded. Previously-saved ships are repaired automatically on load.
+  id: 528
+  time: '2026-06-19T09:44:29.0000000+00:00'
