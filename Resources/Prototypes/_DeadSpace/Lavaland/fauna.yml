@@ -1,6 +1,6 @@
-- type: entity
-  id: BaseMobLavalandFauna
-  abstract: true
+# - type: entity
+  # id: BaseMobLavalandFauna
+  # abstract: true
 #  components:
 #  - type: LavalandWeatherImmune
  # - type: LavalandChasmImmune
@@ -159,14 +159,14 @@
     - CannotSuicide
     - FootstepSound
   - type: NoSlip
-  - type: Butcherable
-    spawned:
-    - id: LavalandLegionSoul
-      amount: 1
-    - id: LavalandLegionSkull
-      prob: 0.35
-    - id: MaterialBones1
-      amount: 2
+  # - type: Butcherable
+    # spawned:
+    # - id: LavalandLegionSoul
+      # amount: 1
+    # - id: LavalandLegionSkull
+      # prob: 0.35
+    # - id: MaterialBones1
+      # amount: 2
 
 - type: entity
   id: MobLavalandLegionHead

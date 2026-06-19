@@ -471,16 +471,6 @@
     sprite: _DeadSpace/Lavaland/Mobs/AshDrake.rsi
     layers:
     - state: dragon
-      map: ["enum.LavalandAshDrakeVisualLayers.Base"]
-  - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.LavalandAshDrakeVisuals.State:
-        enum.LavalandAshDrakeVisualLayers.Base:
-          Dragon: { state: dragon }
-          Shadow: { state: shadow }
-          Swoop: { state: swoop }
-          Dead: { state: dragon_dead }
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -545,20 +535,20 @@
   - type: NoSlip
   - type: RequireProjectileTarget
 
-- type: entity
-  id: LavalandAshDrakeFireballSpellbookDrop
-  name: fireball spellbook drop
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Transform
-    anchored: true
-    noRot: true
-  - type: EntityTableSpawner
-    offset: 0
-    table: !type:AllSelector
-      children:
-      - id: FireballSpellbook
-        prob: 0.35
+# - type: entity
+  # id: LavalandAshDrakeFireballSpellbookDrop
+  # name: fireball spellbook drop
+  # categories: [ HideSpawnMenu ]
+  # components:
+  # - type: Transform
+    # anchored: true
+    # noRot: true
+  # - type: EntityTableSpawner
+    # offset: 0
+    # table: !type:AllSelector
+      # children:
+      # - id: FireballSpellbook
+        # prob: 0.35
 
 # - type: lavalandBossArena
   # id: LavalandBubblegumArena
@@ -882,51 +872,51 @@
     tags:
     - CannotSuicide
 
-- type: entity
-  parent: [ BaseMobAsteroid, FlyingMobBase ]
-  id: MobLavalandBubblegumSlaughterling
-  name: slaughterling
-  description: A half-formed demon crawling out of Bubblegum's blood.
-  suffix: Lavaland
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: _DeadSpace/Lavaland/Mobs/Bloodbrood.rsi
-    layers:
-    - state: bloodbrood
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      1: Dead
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 3
-    baseSprintSpeed: 3.5
-  - type: MeleeWeapon
-    soundHit:
-      path: /Audio/_DeadSpace/Lavaland/Bubblegum/pierce.ogg
-    angle: 0
-    attackRate: 1.2
-    animation: WeaponArcBite
-    damage:
-      types:
-        Piercing: 2
-  - type: NpcFactionMember
-    factions:
-    - SimpleHostile
-  - type: HTN
-    rootTask:
-      task: SimpleHostileCompound
-    blackboard:
-      VisionRadius: !type:Single
-        32
-      AggroVisionRadius: !type:Single
-        32
-      NavSmash: !type:Bool
-        false
-  - type: TimedDespawn
-    lifetime: 10
-  - type: NoSlip
-  - type: Tag
-    tags:
-    - CannotSuicide
+# - type: entity
+  # parent: [ BaseMobAsteroid, FlyingMobBase ]
+  # id: MobLavalandBubblegumSlaughterling
+  # name: slaughterling
+  # description: A half-formed demon crawling out of Bubblegum's blood.
+  # suffix: Lavaland
+  # categories: [ HideSpawnMenu ]
+  # components:
+  # - type: Sprite
+    # drawdepth: Mobs
+    # sprite: _DeadSpace/Lavaland/Mobs/Bloodbrood.rsi
+    # layers:
+    # - state: bloodbrood
+  # - type: MobThresholds
+    # thresholds:
+      # 0: Alive
+      # 1: Dead
+  # - type: MovementSpeedModifier
+    # baseWalkSpeed: 3
+    # baseSprintSpeed: 3.5
+  # - type: MeleeWeapon
+    # soundHit:
+      # path: /Audio/_DeadSpace/Lavaland/Bubblegum/pierce.ogg
+    # angle: 0
+    # attackRate: 1.2
+    # animation: WeaponArcBite
+    # damage:
+      # types:
+        # Piercing: 2
+  # - type: NpcFactionMember
+    # factions:
+    # - SimpleHostile
+  # - type: HTN
+    # rootTask:
+      # task: SimpleHostileCompound
+    # blackboard:
+      # VisionRadius: !type:Single
+        # 32
+      # AggroVisionRadius: !type:Single
+        # 32
+      # NavSmash: !type:Bool
+        # false
+  # - type: TimedDespawn
+    # lifetime: 10
+  # - type: NoSlip
+  # - type: Tag
+    # tags:
+    # - CannotSuicide
