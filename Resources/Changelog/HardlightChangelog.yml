@@ -4993,3 +4993,9 @@ Entries:
       message: Fixed felionoids not getting any NSFW marking options
   id: 536
   time: '2026-06-19T10:12:16.0000000+00:00'
+- author: IngvarJackal
+  changes:
+    - type: Tweak
+      message: Size affects pitch of emotes
+  id: 537
+  time: '2026-06-19T10:12:35.0000000+00:00'
