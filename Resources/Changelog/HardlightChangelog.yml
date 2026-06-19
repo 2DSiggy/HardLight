@@ -4971,3 +4971,15 @@ Entries:
       message: Fixed finished votes being left on screen
   id: 534
   time: '2026-06-19T10:05:55.0000000+00:00'
+- author: fenndragon
+  changes:
+    - type: Remove
+      message: temporarily reverting syndicate weapon values
+    - type: Remove
+      message: temporarily reverting the stash item size change for bags
+    - type: Remove
+      message: 'temporarily reverting the stash banned items '
+    - type: Remove
+      message: minor cleanup of broken assets from previous PR
+  id: 535
+  time: '2026-06-19T10:11:35.0000000+00:00'
