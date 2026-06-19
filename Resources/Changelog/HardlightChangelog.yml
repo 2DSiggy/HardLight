@@ -4965,3 +4965,9 @@ Entries:
         you don't want to.
   id: 533
   time: '2026-06-19T10:05:34.0000000+00:00'
+- author: re-silvered
+  changes:
+    - type: Fix
+      message: Fixed finished votes being left on screen
+  id: 534
+  time: '2026-06-19T10:05:55.0000000+00:00'
