@@ -249,8 +249,8 @@
         - Write
         - Book
         - Spellbook
-        - VinylSleeveFit
         - VinylSleeve
+        - VinylSleeveFit
   - type: StaticPrice
     price: 100000
   - type: CargoSellBlacklist

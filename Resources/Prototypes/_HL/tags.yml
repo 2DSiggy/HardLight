@@ -365,10 +365,10 @@
   id: Cartridge25x59HE
 
 - type: Tag
-  id: DinoFang
+  id: VinylSleeve
 
 - type: Tag
-  id: VinylSleeve
+  id: DinoFang
 
 # Forged Rifle Mag
 - type: Tag
