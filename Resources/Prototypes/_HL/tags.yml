@@ -385,3 +385,7 @@
 
 - type: Tag
   id: CCSabre
+
+# HL: Mark Laser Weapons for bounties
+- type: Tag
+  id: LaserWeapon
